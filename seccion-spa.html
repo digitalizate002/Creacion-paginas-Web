@@ -1,0 +1,55 @@
+    <section class="seccion" id="spa">
+      <div class="contenedor">
+        <h2>Las SPA: aplicaciones de una sola página</h2>
+        <p class="intro">Una SPA (Single Page Application) carga un único documento HTML y cambia su contenido con JavaScript, sin recargar la página al navegar.</p>
+
+        <div class="rejilla">
+          <article class="tarjeta">
+            <h3>Cómo funciona</h3>
+            <p>El navegador descarga una sola vez el HTML, el CSS y el JavaScript. Después, al pulsar un enlace, el script pide solo los datos necesarios y reescribe la parte de la pantalla que cambia.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>Ventajas</h3>
+            <ul>
+              <li>Navegación rápida y fluida tras la primera carga.</li>
+              <li>Sensación parecida a una aplicación de móvil.</li>
+              <li>Cabecera y menú que no se vuelven a cargar.</li>
+            </ul>
+          </article>
+          <article class="tarjeta">
+            <h3>Inconvenientes</h3>
+            <ul>
+              <li>Primera carga más pesada por el JavaScript.</li>
+              <li>SEO más difícil si el contenido solo existe tras ejecutar el script.</li>
+              <li>Hay que cuidar el botón «atrás», el foco del teclado y los lectores de pantalla.</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 style="margin-top:2.5rem">SPA frente a web de varias páginas</h3>
+        <div class="rejilla">
+          <article class="tarjeta">
+            <h3>Web de varias páginas</h3>
+            <p>Cada URL es un archivo HTML. Es sencilla, funciona sin JavaScript y los buscadores la leen sin problemas.</p>
+            <p><strong>Ideal para:</strong> webs informativas, blogs y portfolios.</p>
+          </article>
+          <article class="tarjeta">
+            <h3>SPA</h3>
+            <p>Una sola página que se transforma según lo que hace la persona usuaria. Necesita JavaScript y una buena estrategia de SEO.</p>
+            <p><strong>Ideal para:</strong> paneles de control, editores y herramientas que se usan durante mucho tiempo.</p>
+          </article>
+        </div>
+
+        <h3 style="margin-top:2.5rem">Qué hemos elegido en este proyecto</h3>
+        <p>Esta web usa varias páginas HTML y CSS porque el contenido es informativo, se publica en un alojamiento estático y queremos que cargue rápido y se indexe bien sin depender de JavaScript. Una SPA tendría sentido si la web creciera hacia una herramienta interactiva.</p>
+
+        <h3 style="margin-top:2rem">Cómo optimizar una SPA</h3>
+        <ul class="revision">
+          <li>Dividir el JavaScript en partes y cargar solo lo que cada vista necesita.</li>
+          <li>Dar a cada vista su propia URL, título (<code>title</code>) y descripción.</li>
+          <li>Generar el HTML en el servidor o en la compilación (SSR o prerenderizado) para los buscadores.</li>
+          <li>Mover el foco al nuevo contenido y anunciar el cambio de vista a los lectores de pantalla.</li>
+        </ul>
+      </div>
+    </section>
+
